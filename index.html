@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotel Indore Palace | Luxury Stay</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<button id="darkBtn">🌙</button>
+
+<header>
+  <h1>Hotel Indore Palace</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#rooms">Rooms</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#map">Location</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- HOME -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <h2>Luxury Stay Near Rajwada Palace</h2>
+    <p>Trusted by 5000+ Guests | Best Hotel in Indore</p>
+    <div class="cta-buttons">
+      <a href="#rooms" class="btn">Book Rooms</a>
+      <a href="tel:+919876543210" class="btn outline">Call Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+  <h2 class="section-title">About Our Hotel</h2>
+  <p class="about-text">
+    Hotel Indore Palace is a premium luxury hotel located near the historic Rajwada Palace. 
+    We offer world-class hospitality, modern rooms, fine dining, and exceptional service.
+  </p>
+  <div class="trust">
+    <div>✔ 10+ Years Experience</div>
+    <div>✔ 5000+ Happy Guests</div>
+    <div>✔ 4.8⭐ Google Rating</div>
+  </div>
+</section>
+
+<!-- ROOMS -->
+<section id="rooms">
+  <h2 class="section-title">Our Rooms & Prices</h2>
+  <div class="rooms">
+    <div class="room-card">
+      <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304">
+      <h3>Deluxe Room</h3>
+      <p>AC | WiFi | TV</p>
+      <p class="price">₹3,500 / Night</p>
+      <button onclick="openBooking('Deluxe Room')">Book Now</button>
+    </div>
+    <div class="room-card">
+      <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427">
+      <h3>Executive Room</h3>
+      <p>King Bed | City View</p>
+      <p class="price">₹5,000 / Night</p>
+      <button onclick="openBooking('Executive Room')">Book Now</button>
+    </div>
+    <div class="room-card">
+      <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39">
+      <h3>Suite Room</h3>
+      <p>Luxury | Living Area</p>
+      <p class="price">₹8,000 / Night</p>
+      <button onclick="openBooking('Suite Room')">Book Now</button>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews" class="reviews">
+  <h2 class="section-title">Guest Reviews</h2>
+  <div class="review-grid">
+    <div class="review">⭐⭐⭐⭐⭐<p>Excellent stay & great service.</p><strong>- Rahul</strong></div>
+    <div class="review">⭐⭐⭐⭐⭐<p>Clean rooms & perfect location.</p><strong>- Neha</strong></div>
+    <div class="review">⭐⭐⭐⭐<p>Value for money hotel.</p><strong>- Aman</strong></div>
+  </div>
+</section>
+
+<!-- MAP -->
+<section id="map">
+  <h2 class="section-title">Find Us</h2>
+  <iframe src="https://maps.google.com/maps?q=Rajwada%20Palace%20Indore&z=15&output=embed" loading="lazy"></iframe>
+</section>
+
+<!-- CONTACT / CTA -->
+<section id="contact" class="contact">
+  <h2>Book Your Stay Now</h2>
+  <p>Call us or WhatsApp for instant booking</p>
+  <div class="contact-buttons">
+    <a href="tel:+919876543210" class="btn">📞 Call</a>
+    <a href="https://wa.me/919876543210" class="btn whatsapp">💬 WhatsApp</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <h3>Hotel Indore Palace</h3>
+      <p>Near Rajwada Palace, Indore, MP</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <a href="#home">Home</a>
+      <a href="#rooms">Rooms</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p>📞 +91 98765 43210</p>
+      <p>✉ info@indorepalace.com</p>
+    </div>
+  </div>
+  <p class="copy">© 2026 Hotel Indore Palace</p>
+</footer>
+
+<!-- BOOKING MODAL -->
+<div class="modal" id="bookingModal">
+  <div class="modal-content">
+    <h3 id="roomTitle"></h3>
+    <input placeholder="Name">
+    <input placeholder="Email">
+    <input placeholder="Mobile">
+    <button onclick="confirmBooking()">Confirm Booking</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
